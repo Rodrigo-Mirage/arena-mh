@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+
+   
+    <div id="shuffler">
+        <div id="PlayerDiv">
+            <label id="PlayerName"></label>
+        </div>
+        <div id = "drum">
+            <div id = "slots">
+                <div id = "slotsItens">
+
+                </div>
+            </div>
+        </div>
+        <div id="weapons">
+            <div id="weaponSlot1" class="weaponSlot"><div class="weaponSlotInner"></div></div>
+            <div id="weaponSlot2" class="weaponSlot"><div class="weaponSlotInner"></div></div>
+            <div id="weaponSlot3" class="weaponSlot"><div class="weaponSlotInner"></div></div>
+            <div id="weaponSlot4" class="weaponSlot"><div class="weaponSlotInner"></div></div>
+            <div id="weaponSlot5" class="weaponSlot"><div class="weaponSlotInner"></div></div>
+        </div>
+        
+        <div id="PlayerBans">
+            <input type="button" id="Ban1" value="Ban" class="banbtn" data-slot="1" data-side="" />
+            <input type="button" id="Ban2" value="Ban" class="banbtn" data-slot="2" data-side="" />
+            <input type="button" id="Ban3" value="Ban" class="banbtn" data-slot="3" data-side="" />
+            <input type="button" id="Ban4" value="Ban" class="banbtn" data-slot="4" data-side="" />
+            <input type="button" id="Ban5" value="Ban" class="banbtn" data-slot="5" data-side="" />
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/player.js"></script>
+
+</body>
+</html>

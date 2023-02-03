@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+
+
+    <div id="shuffler">
+        <div id = "drum">
+            <div id = "slots">
+                <div id = "slotsItens">
+
+                </div>
+            </div>
+        </div>
+        <div id="weapons">
+            <div id="weaponSlot1" class="weaponSlot"><div class="weaponSlotInner"></div></div>
+            <div id="weaponSlot2" class="weaponSlot"><div class="weaponSlotInner"></div></div>
+            <div id="weaponSlot3" class="weaponSlot"><div class="weaponSlotInner"></div></div>
+            <div id="weaponSlot4" class="weaponSlot"><div class="weaponSlotInner"></div></div>
+            <div id="weaponSlot5" class="weaponSlot"><div class="weaponSlotInner"></div></div>
+        </div>
+    </div>
+
+    <div id="control">
+        <div id="setTurn">
+            <input type="button" value="Player1" id="Player1" class="setTurn"/>
+            <input type="button" value="Setup" id="Setup" data-id="asdfasd" class="setTurn"/>
+            <input type="button" value="Player2" id="Player2" class="setTurn"/>
+        </div>
+
+        <div id="control1">
+            <input type="button" value="reroll" id="start" />
+            <input type="button" value="reset" onClick="reset()" id="reset" />
+            <input type="button" value="resetBans" onClick="resetBans()" id="resetBans" />
+        </div>
+        <div id="resetBans">
+            <input type="button" value="Ban1" class="banbtn" data-slot="1" data-side="" />
+            <input type="button" value="Ban2" class="banbtn" data-slot="2" data-side="" />
+            <input type="button" value="Ban3" class="banbtn" data-slot="3" data-side="" />
+            <input type="button" value="Ban4" class="banbtn" data-slot="4" data-side="" />
+            <input type="button" value="Ban5" class="banbtn" data-slot="5" data-side="" />
+        </div>
+
+        <div id="Bans1">
+            <input type="button" value="Ban1E" class="banbtn" data-slot="1" data-side="E" />
+            <input type="button" value="Ban2E" class="banbtn" data-slot="2" data-side="E" />
+            <input type="button" value="Ban3E" class="banbtn" data-slot="3" data-side="E" />
+            <input type="button" value="Ban4E" class="banbtn" data-slot="4" data-side="E" />
+            <input type="button" value="Ban5E" class="banbtn" data-slot="5" data-side="E" />
+        </div>
+
+        <div id="Bans2">
+            <input type="button" value="Ban1D" class="banbtn" data-slot="1" data-side="D" />
+            <input type="button" value="Ban2D" class="banbtn" data-slot="2" data-side="D" />
+            <input type="button" value="Ban3D" class="banbtn" data-slot="3" data-side="D" />
+            <input type="button" value="Ban4D" class="banbtn" data-slot="4" data-side="D" />
+            <input type="button" value="Ban5D" class="banbtn" data-slot="5" data-side="D" />
+        </div>
+    </div>
+   
+    <script src="scripts/main.js"></script>
+    <script src="scripts/controller.js"></script>
+</body>
+</html>

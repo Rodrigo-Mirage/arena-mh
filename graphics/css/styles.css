@@ -1,0 +1,276 @@
+@font-face {
+    font-family: "Harukaze";
+    src: url("../font/HarukazeSolid.ttf")  format('truetype');
+}
+
+@font-face {
+    font-family: "Samurai";
+    src: url("../font/samurai.ttf")  format('truetype');
+}
+
+#drum{
+    overflow: hidden;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(245,241,231);
+    border-color: rgb(216,214,218);
+    border-radius: 5px;
+    border-style: double;
+    border-width: 2px;
+}
+
+#slots{
+    margin-top: 100px;
+}
+
+.slotitem{
+ width: 300px;
+ height: 100px;
+ text-align: right;
+ background-size: contain;
+ background-repeat: no-repeat;
+ font-family: "Harukaze";
+ overflow: hidden;
+}
+
+#shuffler{    
+    position: absolute;
+    left: 15px;
+    width:300px;
+    height:550px;
+} 
+
+#weapons{
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.weaponSlot{
+    width: 45px;
+    height: 45px;
+    margin-left: 12px;
+    margin-top: 20px;
+    overflow: hidden;
+    border-style: double;
+    border-width: 2px;
+    display: inline-block;
+    background-color: rgb(245,241,231);
+    border-color: rgb(216,214,218);
+}
+
+.weaponSlotInner{
+    margin-top: -50px;
+    margin-left: 3px;
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Challenge{
+    background-image: linear-gradient(to right, rgba(0,0,255, 0) , rgba(0,0,255, 0.3));
+}
+
+.Arena{
+    background-image: linear-gradient(to right, rgba(255,0,0, 0) , rgba(255,0,0, 0.3));
+}
+
+#control{
+    position: absolute;
+    top:300px;
+}
+
+
+
+.monster{
+ width: 100px;
+ height: 100px;
+ background-size: contain;
+ background-repeat: no-repeat;
+ float: left;
+}
+.type{
+    margin-top: -15px;
+    font-size: 45px;
+    margin-right: 10px;
+}
+.monsterName{
+    margin-top: -45px;
+    margin-bottom: 60px;
+    margin-right: 10px;
+    font-size: 65px;
+}
+
+.number{
+    font-family: "Samurai";
+    font-size: 20px;
+}
+
+#PlayerName{
+    display: block;
+    text-align: center;
+    font-family: "Samurai";
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.notTurn{
+    background-image: linear-gradient(to top, rgba(0,0,255, 0) , rgba(255,0,0, 0.3));
+
+}
+
+.turn{
+    background-image: linear-gradient(to top, rgba(0,0,255, 0) , rgba(0,255,0, 0.3));
+
+}
+
+
+.banbtn{
+    min-width: 50px;
+}
+
+#PlayerBans{
+    margin-top: 25px;
+}
+
+#PlayerBans .banbtn{
+    width: 20px;
+    margin-left: 5px;
+}
+
+.Barioth{
+    background-image: url("../images/Barioth.png");
+}
+
+.Barroth{
+    background-image: url("../images/Barroth.png");
+}
+
+.Barroth{
+    background-image: url("../images/Barroth.png");
+}
+
+.KuluYaKu{
+    background-image: url("../images/KuluYaKu.png");
+}
+
+.Magnamalo{
+    background-image: url("../images/Magnamalo.png");
+}
+
+.Rajang{
+    background-image: url("../images/Rajang.png");
+}
+
+.RaknaKadaki{
+    background-image: url("../images/RaknaKadaki.png");
+}
+
+.Tetranodon{
+    background-image: url("../images/Tetranodon.png");
+}
+
+.Tigrex{
+    background-image: url("../images/Tigrex.png");
+}
+
+.Zinogre{
+    background-image: url("../images/Zinogre.png");
+}
+
+.BloodOrangeBishaten{
+    background-image: url("../images/BloodOrangeBishaten.png");
+}
+
+.DaimyoHermitaur{
+    background-image: url("../images/DaimyoHermitaur.png");
+}
+
+.Espinas{
+    background-image: url("../images/Espinas.png");
+}
+
+.Garangolm{
+    background-image: url("../images/Garangolm.png");
+}
+
+.FuriousRajang{
+    background-image: url("../images/FuriousRajang.png");
+}
+
+.Lunagaron{
+    background-image: url("../images/Lunagaron.png");
+}
+
+.Bow{
+    background-image: url("../images/Bow.png");
+}
+
+.ChargeBlade{
+    background-image: url("../images/ChargeBlade.png");
+}
+
+.DualBlades{
+    background-image: url("../images/DualBlades.png");
+}
+
+.GreatSword{
+    background-image: url("../images/GreatSword.png");
+}
+
+.GunLance{
+    background-image: url("../images/GunLance.png");
+}
+
+.Hammer{
+    background-image: url("../images/Hammer.png");
+}
+
+.HeavyBowGun{
+    background-image: url("../images/HeavyBowGun.png");
+}
+
+.HuntingHorn{
+    background-image: url("../images/HuntingHorn.png");
+}
+
+.InsectGlaive{
+    background-image: url("../images/InsectGlaive.png");
+}
+
+.Lance{
+    background-image: url("../images/Lance.png");
+}
+
+.LightBowGun{
+    background-image: url("../images/LightBowGun.png");
+}
+
+.LongSword{
+    background-image: url("../images/LongSword.png");
+}
+
+.SwitchAxe{
+    background-image: url("../images/SwitchAxe.png");
+}
+
+.SwordAndShield{
+    background-image: url("../images/SwordAndShield.png");
+}
+
+.ban{
+    margin-top: -1000px;
+    font-family: 'Harukaze';
+    font-size: 85px;
+}
+.BanE .ban{
+    margin-top: -93px;
+    color: blue;
+}
+
+.BanD .ban{
+    margin-top: -93px;
+    color: red;
+}
