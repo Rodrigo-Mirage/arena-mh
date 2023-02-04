@@ -29,9 +29,31 @@ p.on("change", (newVal, oldVal) => {
 
 function save(){
 
+    
+
     var object = {
-        "player1": p1old.name != p1Inp.value ? {name:p1Inp.value, id:uuidv4()}:p1old,
-        "player2": p2old.name != p2Inp.value ? {name:p2Inp.value, id:uuidv4()}:p2old,
+        "player1": {},
+        "player2": {},
+    }
+    
+    if (p1old) {
+        if(p1old.name != p1Inp.value){
+            object["player1"] = {name:p1Inp.value, id:uuidv4()}
+        }else{
+            object["player1"] = p1old;
+        }
+    }else{
+        object["player1"] = {name:p1Inp.value, id:uuidv4()}
+    }
+    
+    if (p2old) {
+        if(p2old.name != p2Inp.value){
+            object["player2"] = {name:p2Inp.value, id:uuidv4()}
+        }else{
+            object["player2"] = p2old;
+        }
+    }else{
+        object["player2"] = {name:p2Inp.value, id:uuidv4()}
     }
 
     p.value = object;
