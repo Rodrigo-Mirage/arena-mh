@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<style>
+		.monospace {
+			font-family: monospace;
+		}
+	</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="arenaInfo">
+        <div id="monsterPhoto" class="monsterImg"></div>
+        <div class="monsterInfo">
+            <div id="monsterName"></div>
+            <div id="weapons">
+                <div id="weapon1" class="weapon"></div>
+                <div id="weapon2" class="weapon"></div>
+                <div id="weapon3" class="weapon"></div>
+                <div id="weapon4" class="weapon"></div>
+                <div id="weapon5" class="weapon"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="PlayerInfo">
+        <div id="Player1info" class="PlayerInfo">
+            <div id="Player1Name"></div>
+            <div id="Player1Score"></div>
+            <input type="button" onclick="setTurn(0)" id="Player1Turn" value="Player1Turn">
+            <input type="button" onclick="setVictory(0)" id="Player1Victory" value="Player1Victory">
+        </div>
+        <div id="Player2info" class="PlayerInfo">
+            <div id="Player2Name"></div>
+            <div id="Player2Score"></div>
+            <input type="button" onclick="setTurn(1)"  id="Player2Turn" value="Player2Turn">
+            <input type="button" onclick="setVictory(1)" id="Player2Victory" value="Player2Victory">
+        </div>
+    </div>
+    <div id="HostsÌnfo" class="hosts">
+        <input type="text" id="Hosts" onchange="changeHost(this)">
+        <input type="button" id="ResetTurn" onclick="resetTurn()" value="ResetTurn">
+        <input type="button" id="Reroll" onclick="reroll()" value="Reroll">
+        <input type="button" id="START" onclick="countDown(10)" value="START">
+        <input type="button" id="Clear" onclick="clearAll()" value="Clear">
+    </div>
+
+    <script src="scripts/arena.js"></script>
+</body>
+</html>

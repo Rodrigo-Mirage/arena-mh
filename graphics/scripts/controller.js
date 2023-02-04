@@ -66,6 +66,13 @@ $('#reset').click(function () {
 });
 
 function reset(){
+    bans =
+    {
+        E:"",
+        D:""
+    };
+
+    banRep.value = bans;
     div.css({marginTop: '100px'});
     var html = ``;
     html = "";
@@ -77,13 +84,6 @@ function reset(){
     slots = [];
     slotsRep.value = [];
 
-    bans =
-    {
-        E:"",
-        D:""
-    };
-
-    banRep.value = bans;
 }
 
 $('#resetBans').click(function () {

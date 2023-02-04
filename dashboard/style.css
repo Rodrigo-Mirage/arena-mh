@@ -1,0 +1,304 @@
+.arenaItem{
+    height: 25px;
+
+}
+
+.weapons{
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    border: solid white 1px;
+    float: right;
+    right: 20px;
+}
+
+.mini-weapon{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: white 1px;
+    margin-left: 4px;
+    margin-top: 2px;
+    background-size: contain;
+}
+
+
+.Barioth{
+    background-image: url("images/Barioth.png");
+}
+
+.Barroth{
+    background-image: url("images/Barroth.png");
+}
+
+.Barroth{
+    background-image: url("images/Barroth.png");
+}
+
+.KuluYaKu{
+    background-image: url("images/KuluYaKu.png");
+}
+
+.Magnamalo{
+    background-image: url("images/Magnamalo.png");
+}
+
+.Rajang{
+    background-image: url("images/Rajang.png");
+}
+
+.RaknaKadaki{
+    background-image: url("images/RaknaKadaki.png");
+}
+
+.Tetranodon{
+    background-image: url("images/Tetranodon.png");
+}
+
+.Tigrex{
+    background-image: url("images/Tigrex.png");
+}
+
+.Zinogre{
+    background-image: url("images/Zinogre.png");
+}
+
+.BloodOrangeBishaten{
+    background-image: url("images/BloodOrangeBishaten.png");
+}
+
+.DaimyoHermitaur{
+    background-image: url("images/DaimyoHermitaur.png");
+}
+
+.Espinas{
+    background-image: url("images/Espinas.png");
+}
+
+.Garangolm{
+    background-image: url("images/Garangolm.png");
+}
+
+.FuriousRajang{
+    background-image: url("images/FuriousRajang.png");
+}
+
+.Lunagaron{
+    background-image: url("images/Lunagaron.png");
+}
+
+.Bow{
+    background-image: url("images/Bow.png");
+}
+
+.ChargeBlade{
+    background-image: url("images/ChargeBlade.png");
+}
+
+.DualBlades{
+    background-image: url("images/DualBlades.png");
+}
+
+.GreatSword{
+    background-image: url("images/GreatSword.png");
+}
+
+.GunLance{
+    background-image: url("images/GunLance.png");
+}
+
+.Hammer{
+    background-image: url("images/Hammer.png");
+}
+
+.HeavyBowGun{
+    background-image: url("images/HeavyBowGun.png");
+}
+
+.HuntingHorn{
+    background-image: url("images/HuntingHorn.png");
+}
+
+.InsectGlaive{
+    background-image: url("images/InsectGlaive.png");
+}
+
+.Lance{
+    background-image: url("images/Lance.png");
+}
+
+.LightBowGun{
+    background-image: url("images/LightBowGun.png");
+}
+
+.LongSword{
+    background-image: url("images/LongSword.png");
+}
+
+.SwitchAxe{
+    background-image: url("images/SwitchAxe.png");
+}
+
+.SwordAndShield{
+    background-image: url("images/SwordAndShield.png");
+}
+
+.ban{
+    margin-top: -1000px;
+    font-family: 'Harukaze';
+    font-size: 85px;
+}
+.BanE{
+    margin-top: -93px;
+    background-color: rgba(0, 0, 255, 0.3);
+    background-blend-mode: multiply;
+}
+
+.BanD{
+    margin-top: -93px;
+    background-color: rgba(255, 0, 0, 0.3);
+    background-blend-mode: multiply;
+}
+
+
+.input{
+    display: flex;
+    width: 100%;
+    margin-right: 15px;
+}
+
+a {
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    line-height: 3;
+    color: black;
+  }
+  
+  a:link,
+  a:visited,
+  a:focus {
+    background: palegoldenrod;
+    color: black;
+  }
+  
+  a:hover {
+    background: orange;
+  }
+  
+  a:active {
+    background: darkred;
+    color: white;
+  }
+
+
+  .weapon{
+    width: 50px;
+    height: 53px;
+    background-size:100%;
+    display: inline-block;
+    margin-left: 5px;
+
+  }
+  .monsterImg{
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    display: inline-block;
+  }
+
+  #history .monsterImg{
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    display: inline-block;
+  }
+  #history .weapon{
+    width: 20px;
+    height: 23px;
+    background-size:100%;
+    display: inline-block;
+    margin-left: 5px;
+
+  }
+  #history #weapons{
+    width: 150px;
+  }
+
+
+  #monsterName{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .monsterInfo{
+    width: 300px;
+    height: 150px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 27px;
+    float: right;
+
+  }
+
+  
+  #history .monsterInfo{
+    width: 120px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 0px;
+
+  }
+  
+  .victory{
+    width: 45px;
+    height: 45px;
+  }
+
+  
+  .victoryE{
+    background-color: blue;
+  }
+  
+  .victoryD{
+    background-color: rgb(255, 0, 0);
+  }
+ 
+  #history #monsterName{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .PlayerInfo{
+    max-width: 90px;
+    height: 100px;
+    display: inline-block;
+  }
+
+  #history .arenaInfo{
+    display: flex;
+  }
+  
+  #PlayerInfo{
+    display: flex;
+  }
+
+  #VS{
+    max-width: 40px;
+    height: 40px;
+    margin-left: 248px;
+    background-size: contain;
+    background-image: url("images/vs.png");
+  }
+
+  #Player1info{
+    float: left;
+  }
+  
+  #Player2info{
+    top: 0;
+    float: right;
+  }

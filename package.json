@@ -36,10 +36,17 @@
         "headerColor": "#525F78"
       },
       {
-        "name": "links",
-        "title": "links",
+        "name": "History",
+        "title": "History",
         "width": 2,
-        "file": "links.html",
+        "file": "history.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "Arena",
+        "title": "Arena",
+        "width": 4,
+        "file": "arena.html",
         "headerColor": "#525F78"
       }
     ],

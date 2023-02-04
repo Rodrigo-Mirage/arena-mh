@@ -7,16 +7,24 @@
 			font-family: monospace;
 		}
 	</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	Player 1
-	<div id="player1">
-		<input id="Player1Name" />
-	</div>
-	Player 2
-	<div id="player2">
-		<input id="Player2Name" />
-	</div>
+	<fieldset><legend>Player 1</legend>
+		
+		<div id="player1">
+			<input class="input" id="Player1Name" />
+			<a target="_blank" href="" id="Player1Link"></a>
+		</div>
+	</fieldset>
+
+	<fieldset><legend>Player 2</legend>
+		
+		<div id="player2">
+			<input class="input" id="Player2Name" />
+			<a target="_blank" href="" id="Player2Link"></a>
+		</div>
+	</fieldset>
 	<button onclick="save()">Save</button>
     <script src="scripts/players.js"></script>
 </body>

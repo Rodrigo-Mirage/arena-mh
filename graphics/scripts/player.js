@@ -3,6 +3,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const playerName = document.getElementById("PlayerName");
 const shuffler = document.getElementById("shuffler");
+var timer = nodecg.Replicant('timer');
 
 var turn = nodecg.Replicant('ArenaTurn');
 
@@ -15,6 +16,17 @@ turn.on("change", (newVal, oldVal) => {
     }
 });
 
+timer.on("change", (newVal, oldVal) => {
+    var html = "";
+    if(newVal){
+        html = newVal;
+    }
+    if(newVal===0){
+        html = "HUNT BEGIN";
+    }
+    document.getElementById("Timer").innerHTML = html;
+
+});
 
 var banRep = nodecg.Replicant('BanVar');
 var bans =
