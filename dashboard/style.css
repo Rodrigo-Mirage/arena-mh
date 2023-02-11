@@ -217,15 +217,16 @@ a {
     display: inline-block;
   }
   #history .weapon{
-    width: 20px;
+    width: 22px;
     height: 23px;
     background-size:100%;
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 0px;
 
   }
   #history #weapons{
     width: 150px;
+    margin-left: 25px;
   }
 
 
@@ -246,7 +247,7 @@ a {
 
   
   #history .monsterInfo{
-    width: 120px;
+    width: 165px;
     height: 50px;
     display: inline-block;
     margin-top: 0px;
@@ -273,9 +274,8 @@ a {
   }
 
   .PlayerInfo{
-    max-width: 90px;
+    width: 300px;
     height: 100px;
-    display: inline-block;
   }
 
   #history .arenaInfo{
@@ -283,8 +283,23 @@ a {
   }
   
   #PlayerInfo{
+    height: 150px;
+    width: 100%;
     display: flex;
   }
+  .PlayerController{
+    display: grid;
+  }
+
+  #playerPicks {
+    display: flex;
+  }
+  
+  #playerPicks .weapon{
+    height: 45px;
+    width: 45px;
+  }
+  
 
   #VS{
     max-width: 40px;
@@ -292,13 +307,4 @@ a {
     margin-left: 248px;
     background-size: contain;
     background-image: url("images/vs.png");
-  }
-
-  #Player1info{
-    float: left;
-  }
-  
-  #Player2info{
-    top: 0;
-    float: right;
   }

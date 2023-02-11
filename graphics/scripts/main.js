@@ -16,7 +16,6 @@ arenas.on("change", (newVal, oldVal) => {
     if(newVal){
        data = newVal;
        ready();
-       console.log("arenas")
     }
 
 });

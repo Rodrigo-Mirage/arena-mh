@@ -29,16 +29,9 @@
         "headerColor": "#525F78"
       },
       {
-        "name": "Players",
-        "title": "Players",
-        "width": 2,
-        "file": "players.html",
-        "headerColor": "#525F78"
-      },
-      {
         "name": "History",
         "title": "History",
-        "width": 2,
+        "width": 3,
         "file": "history.html",
         "headerColor": "#525F78"
       },
@@ -47,6 +40,13 @@
         "title": "Arena",
         "width": 4,
         "file": "arena.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "Players",
+        "title": "Players",
+        "width": 2,
+        "file": "players.html",
         "headerColor": "#525F78"
       }
     ],
@@ -58,7 +58,7 @@
       },
       
       {
-        "file": "control.html",
+        "file": "race.html",
         "width": 1280,
         "height": 720
       },
@@ -67,6 +67,19 @@
         "file": "player.html",
         "width": 1280,
         "height": 720
+      },
+      
+      {
+        "file": "playersInfo.html",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "assetCategories": [
+      {
+        "name": "players",
+        "title": "Player Avatar",
+        "allowedTypes": ["jpg", "jpeg", "gif", "png"]
       }
     ]
   },

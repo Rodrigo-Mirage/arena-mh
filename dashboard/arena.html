@@ -28,20 +28,27 @@
         <div id="Player1info" class="PlayerInfo">
             <div id="Player1Name"></div>
             <div id="Player1Score"></div>
-            <input type="button" onclick="setTurn(0)" id="Player1Turn" value="Player1Turn">
-            <input type="button" onclick="setVictory(0)" id="Player1Victory" value="Player1Victory">
+            <div id="Player1Weapon" class="weapon"></div>
+            <div id="Player1Controller" class="PlayerController">
+                <input type="button" onclick="setTurn(0)" id="Player1Turn" value="Player1Turn">
+                <input type="button" onclick="setVictory(0)" id="Player1Victory" value="Player1Victory">
+            </div>
         </div>
         <div id="Player2info" class="PlayerInfo">
             <div id="Player2Name"></div>
             <div id="Player2Score"></div>
-            <input type="button" onclick="setTurn(1)"  id="Player2Turn" value="Player2Turn">
-            <input type="button" onclick="setVictory(1)" id="Player2Victory" value="Player2Victory">
+            <div id="Player2Weapon" class="weapon"></div>
+            <div id="Player2Controller" class="PlayerController">
+                <input type="button" onclick="setTurn(1)"  id="Player2Turn" value="Player2Turn">
+                <input type="button" onclick="setVictory(1)" id="Player2Victory" value="Player2Victory">
+            </div>
         </div>
     </div>
     <div id="HostsÌnfo" class="hosts">
         <input type="text" id="Hosts" onchange="changeHost(this)">
         <input type="button" id="ResetTurn" onclick="resetTurn()" value="ResetTurn">
-        <input type="button" id="Reroll" onclick="reroll()" value="Reroll">
+        <input type="button" id="Reroll" onclick="reroll()" value="Roll">
+        <input type="button" id="pickTurn" onclick="pickTurn()" value="Picks">
         <input type="button" id="START" onclick="countDown(10)" value="START">
         <input type="button" id="Clear" onclick="clearAll()" value="Clear">
     </div>

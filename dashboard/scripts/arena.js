@@ -8,8 +8,10 @@ var arenas = nodecg.Replicant('ArenaList');
 var slotsRep = nodecg.Replicant('ArenaSlots');
 var hostsVar = nodecg.Replicant('ArenaHosts');
 var timer = nodecg.Replicant('timer');
+var pickRep = nodecg.Replicant('PickVar');
 
 var bans = {E:0,D:0};
+var picks = {E:0,D:0};
 var players = [];
 var slot = [];
 var data = {};
@@ -75,29 +77,49 @@ p.on("change",(newVal, oldVar)=>{
 banRep.on("change",(newVal, oldVar)=>{
     if(newVal){
         bans = newVal;
-        if(newVal["E"]){
-            document.getElementById("weapon"+newVal["E"]).classList.add("BanE");
-        }
-        if(newVal["D"]){
-            document.getElementById("weapon"+newVal["D"]).classList.add("BanD");
+        for(var i = 1 ; i<=5 ;i++){
+            console.log(i)
+            if(i != newVal["E"]){
+                document.getElementById("weapon"+i).classList.remove("BanE");
+            }else{
+                document.getElementById("weapon"+newVal["E"]).classList.add("BanE");
+            }
+            if(i != newVal["D"]){
+                document.getElementById("weapon"+i).classList.remove("BanD");                
+            }else{
+                document.getElementById("weapon"+newVal["D"]).classList.add("BanD");
+            }
         }
     }
 });
+
+
+pickRep.on("change", (newVal, oldVal) => {
+    if(newVal){
+        picks = newVal;
+        document.getElementById("Player1Weapon").classList = ["weapon"];
+        document.getElementById("Player2Weapon").classList = ["weapon"];
+
+        if(newVal.E){
+            document.getElementById("Player1Weapon").classList.add(slot.weapons[newVal.E-1]);
+        }
+        if(newVal.D){
+            document.getElementById("Player2Weapon").classList.add(slot.weapons[newVal.D-1]);
+        }
+    }
+});
+
 
 function setVictory(e){
     var placarItem = {
         slot:slot,
         bans:bans,
+        picks:picks,
         victory:e
     }
     placar.push(placarItem);
     hist.value = placar;
-    timer.value = "";
-}
-
-function resetTurn(){
-    turn.value = "asdfasdf";
-    timer.value = "";
+    clearAll();
 }
 
 function setTurn(e){
@@ -113,7 +135,8 @@ arenas.on("change", (newVal, oldVal) => {
 function clearAll(){
     slotsRep.value = [];
     banRep.value = {E:0,D:0};
-    turn.value = "asdfasdf";
+    pickRep.value = {E:0,D:0};
+    turn.value = "none";
     document.getElementById("monsterName").innerHTML = "";
     document.getElementById("monsterPhoto").classList = ["monsterImg"];
     for(var i =0;i<5;i++){
@@ -122,9 +145,15 @@ function clearAll(){
     timer.value = "";
 }
 
+function pickTurn(){
+    turn.value = "pick";
+}
+
 function resetTurn(){
     banRep.value = {E:0,D:0};
-    turn.value = "asdfasdf";
+    pickRep.value = {E:0,D:0};
+    turn.value = "none";
+    timer.value = "";
 }
 
 function reroll(){

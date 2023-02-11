@@ -1,10 +1,13 @@
 var placar = nodecg.Replicant('ArenaPlacar');
-
+var backup = [];
 
 placar.on("change",(newVal,oldVal)=>{
     var html ="";
     if(newVal){
+        backup = newVal;
+        count = 0;
         newVal.forEach(element => {
+            console.log(element);
             html += `
             <div class="arenaInfo">
                 <div id="monsterPhoto" class="monsterImg ${element.slot.monster}"></div>
@@ -18,8 +21,14 @@ placar.on("change",(newVal,oldVal)=>{
                         <div id="weapon5" class="weapon ${element.slot.weapons[4]} ${element.bans.E == 5?"BanE":""} ${element.bans.D == 5?"BanD":""}"></div>
                     </div>
                 </div>
-                <div class="victory victory${element.victory == 0?"E":"D"}"></div>
+                <div id="playerPicks">
+                <div id="Pick1" class="weapon ${element.slot.weapons[element.picks.E -1]}"></div>
+                <div onclick="remove(${count})" class="victory victory${element.victory == 0?"E":"D"}"></div>
+                <div id="Pick2" class="weapon ${element.slot.weapons[element.picks.D -1]}"></div>
+                </div>
             </div>`;
+            
+            count++;
         });
     }
 
@@ -29,4 +38,10 @@ placar.on("change",(newVal,oldVal)=>{
 
 function reset(){
     placar.value = [];
+}
+
+
+function remove(e){
+    backup.splice(e,1);
+    placar.value = backup;
 }
